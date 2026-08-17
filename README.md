@@ -1,4 +1,10 @@
-# VICHAR_AI
+<p align="center">
+  <img src="apps/web/public/vichar-heart-logo.webp" width="180" alt="Vichar AI heart logo" />
+</p>
+
+<h1 align="center">VICHAR AI</h1>
+
+<p align="center"><strong>Because every feeling deserves to be heard.</strong></p>
 
 Vichar AI is an emotionally aware wellness companion with Arpita and Biniit,
 context-aware conversations, mood support, and a calming private journal.

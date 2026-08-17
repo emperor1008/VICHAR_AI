@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandMark } from "@/components/BrandMark";
 
 const columns: { title: string; links: { label: string; href: string }[] }[] = [
   {
@@ -36,10 +37,8 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>
             <Link href="/" className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-matcha-400 to-matcha-600 text-lg">
-                🍃
-              </span>
-              <span className="font-heading text-lg font-semibold tracking-tight">Vichar</span>
+              <BrandMark size="sm" decorative />
+              <span className="font-heading text-lg font-semibold tracking-tight">Vichar AI</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-warmgray dark:text-[#b0ab9e]">
               An emotionally intelligent AI companion for everyday mental wellness. Because every

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { RequireAuth } from "@/components/RequireAuth";
+import { BrandMark } from "@/components/BrandMark";
 import { GlassCard } from "@/components/GlassCard";
 import { Button } from "@/components/Button";
 import { useAuth } from "@/lib/auth";
@@ -79,8 +80,9 @@ function HomeContent() {
     <main className="mx-auto max-w-5xl px-5 pb-24 pt-10">
       {/* Top bar */}
       <header className="flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5" aria-label="Vichar home">
-          <span className="font-heading text-lg font-semibold tracking-tight">Vichar</span>
+        <Link href="/" className="flex items-center gap-2.5" aria-label="Vichar AI home">
+          <BrandMark size="sm" decorative />
+          <span className="font-heading text-lg font-semibold tracking-tight">Vichar AI</span>
         </Link>
         <div className="flex items-center gap-3">
           <span className="hidden text-sm text-warmgray dark:text-[#b0ab9e] sm:inline">{user?.email}</span>
@@ -105,9 +107,7 @@ function HomeContent() {
               : "Your companion is here whenever you need them."}
           </p>
         </div>
-        <div aria-hidden className="grid h-20 w-20 shrink-0 place-items-center rounded-full shadow-soft">
-          <img src="/vichar-logo.svg" alt="" className="h-full w-full" />
-        </div>
+        <BrandMark size="xl" decorative className="shadow-soft" />
       </section>
 
       {affirmation && (

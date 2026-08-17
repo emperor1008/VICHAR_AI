@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { BrandMark } from "@/components/BrandMark";
 import { useTheme } from "@/lib/theme";
 import { cx } from "@/lib/format";
 
@@ -31,8 +32,9 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <Link href="/" className="flex items-center gap-2.5" aria-label="Vichar home">
-          <span className="font-heading text-lg font-semibold tracking-tight">Vichar</span>
+        <Link href="/" className="flex items-center gap-2.5" aria-label="Vichar AI home">
+          <BrandMark size="sm" decorative priority />
+          <span className="font-heading text-lg font-semibold tracking-tight">Vichar AI</span>
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">

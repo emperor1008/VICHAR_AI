@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { BrandMark } from "@/components/BrandMark";
 
 export function AuthShell({
   title,
@@ -21,11 +22,9 @@ export function AuthShell({
       />
 
       <div className="relative w-full max-w-md">
-        <Link href="/" className="mb-8 flex items-center justify-center gap-2.5" aria-label="Vichar home">
-          <span className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-matcha-400 to-matcha-600 text-xl shadow-soft">
-            🍃
-          </span>
-          <span className="font-heading text-xl font-semibold tracking-tight">Vichar</span>
+        <Link href="/" className="mb-8 flex items-center justify-center gap-2.5" aria-label="Vichar AI home">
+          <BrandMark size="md" decorative />
+          <span className="font-heading text-xl font-semibold tracking-tight">Vichar AI</span>
         </Link>
 
         <div className="glass p-8 sm:p-10">

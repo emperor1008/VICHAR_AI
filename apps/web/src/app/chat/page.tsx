@@ -3,6 +3,7 @@
 import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { RequireAuth } from "@/components/RequireAuth";
+import { BrandMark } from "@/components/BrandMark";
 import { Markdown } from "@/components/markdown";
 import { Orb } from "@/components/Orb";
 import { useAuth } from "@/lib/auth";
@@ -208,7 +209,7 @@ function ChatContent() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-3">
             <Link href="/home" className="focus-ring grid h-9 w-9 shrink-0 place-items-center rounded-full" aria-label="Back to home">
-
+              <BrandMark size="sm" decorative />
             </Link>
             <Orb emotion={orbEmotion} size={40} className="shrink-0" />
             <div className="min-w-0">
