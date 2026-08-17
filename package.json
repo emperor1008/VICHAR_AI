@@ -1,0 +1,23 @@
+{
+  "name": "vichar-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vichar AI — an emotionally intelligent AI wellness companion. Because every feeling deserves to be heard.",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c green,blue \"npm --prefix apps/api run dev\" \"npm --prefix apps/web run dev\"",
+    "dev:api": "npm --prefix apps/api run dev",
+    "dev:web": "npm --prefix apps/web run dev",
+    "build": "npm --prefix apps/api run build && npm --prefix apps/web run build",
+    "test": "npm --prefix apps/api run test",
+    "typecheck": "npm --prefix apps/api run typecheck && npm --prefix apps/web run typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ollama": "^0.6.3"
+  }
+}

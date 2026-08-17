@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Builds
+dist/
+.next/
+out/
+*.tsbuildinfo
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Runtime database only. Do not ignore apps/api/src/data source files.
+*.db
+*.db-shm
+*.db-wal
+/apps/api/data/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local AI / agent configuration
+.agents/
+.freebuff/
